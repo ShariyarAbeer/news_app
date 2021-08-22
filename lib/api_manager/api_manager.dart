@@ -17,7 +17,6 @@ class API_Manager {
       if (response.statusCode == 200) {
         var jsonString = response.body;
         var jsonMap = json.decode(jsonString);
-
         newsModel = Welcome.fromJson(jsonMap);
         print(jsonMap);
       }
